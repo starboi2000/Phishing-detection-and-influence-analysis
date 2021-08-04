@@ -19,9 +19,9 @@ Object Detection using Transformers
 * `git clone https://github.com/starboi2000/Phishing_detection-influence_analysis.git`
 * `cd Full - App && mkdir contents`
 * Download all the models and the topic_blacklist.txt from [drive](https://drive.google.com/drive/folders/1djyMa2-V-7HJfeHj17fdNeLvmmi0dE9K?usp=sharing)
-* Model Nomenclature: `detr_(Epoch Number).pth`
-* Experimental results: `detr_4.pth` and `detr_6.pth` work best
-* Save the model to the folder `saved_models`
-* `python inference.py --model detr_{epoch_number}.pth --folder {path/to/images}`
+* Put all the models and the files in that contents folder
+* `pip install -r requirements.txt`
+* Run `python app.py`
+
 
 
