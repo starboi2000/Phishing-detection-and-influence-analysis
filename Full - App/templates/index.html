@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>If you have a shortened url, <a href="/geturl">click here</a> to get the actual url</p> -->
+
+    <form action="/predict" method="post" align="middle">
+
+        <label for="site">Please enter your email id</label>
+        <br><br>
+        <input name="email" id="site" type="text">
+        
+
+        <input type="submit" value="Press me">
+    </form>
+
+    <p align="middle">{{ mail_stat }}</p>
+
+
+    <form action="/tweetcheck" method="post" align="middle">
+
+        <label for="site">Please enter your twitter username</label>
+        <br><br>
+        <input name="username" id="site" type="text">
+        
+
+        <input type="submit" value="Press me">
+    </form>
+
+    <br>
+    <form action="/mailcheck" method="post" align="middle">
+
+        <label for="mailtext">Please enter your mail text or any site or both</label>
+        <br><br>
+        <textarea name="mail" id="mailtext" rows="7" cols="70"></textarea>
+        <br>
+
+        <input type="submit" value="Press me">
+    </form>
+
+
+    <div class="container" align="middle">
+        <div class="row">
+            <div class="col">
+                {% if action == 'sitecheck' or action == 'mailcheck' %}
+                <form action="/sitecheck" method="post">
+
+                    <label for="mailtext1">Sites from your mail text</label>
+                    <br><br>
+                    <textarea name="mail1" id="mailtext1" rows="7" cols="70">
+                        {% for i in mail_sites %}
+                        {{ i }}
+                        {% endfor %}
+                    </textarea>
+                    <br>
+            
+                    <input type="submit" value="Press me">
+                </form>
+                {% endif %}
+            </div>
+
+            <div class="col">
+                {% if action == 'textinfl' or action == 'mailcheck' %}
+                <form action="/textinfl" method="post">
+
+                    <label for="mailtext2">Raw text part of your mail</label>
+                    <br><br>
+                    <small>We are analyzing the influence hidden behind this text</small>
+                    <textarea name="mail2" id="mailtext2" rows="7" cols="70">{{ mail_text }}</textarea>
+                    <br>
+            
+                    <input type="submit" value="Press me">
+                </form>
+                {% if prob|length %}
+                    <p>Reciprocity: {{ prob[0] }}</p>
+                    <p>Scarcity: {{ prob[1] }}</p>
+                    <p>Authorization: {{ prob[2] }}</p>
+                    <p>Commitment: {{ prob[3] }}</p>
+                    <p>Liking: {{ prob[4] }}</p>
+                    <p>Concensus: {{ prob[5] }}</p>
+                    <p>Normal: {{ prob[6] }}</p>
+                    {% if infl_val == '7' %}
+                <p>This text is a normal sentence</p>
+                {% else %}
+                <p>We found that the text you wrote is most likely to be {{ infl_val }} influence.</p>
+                {% endif %}
+                {% if forbidden|length %}
+                    <p>Containing forbidden words like: </p>
+                    {% for word in forbidden %}
+                        <p style="color: red;">{{ word }}</p>
+                    {% endfor %}
+                {% else %}
+                    <p>Not containing any forbidden words</p>
+                {% endif %}
+                {% endif %}
+
+                
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            background-color: #24b6c9;
+            
+        }
+
+        p, label {
+            color: white;
+            font-size: 24px;
+        }
+
+        input {
+            border-radius: 10px;
+            border: 4px solid white;
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</body>
+</html>
