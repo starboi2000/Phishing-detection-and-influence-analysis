@@ -13,4 +13,8 @@ Phishing is a common tactic used by cybercriminals to steal personal and financi
 * Run `python app.py`
 
 
-
+<p align="center">
+    <img alt="Transformer" src="samples/22.jpg" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+    <img alt="EfficientDet" src="Screenshot%20(173).png" width="45%">
+</p>
