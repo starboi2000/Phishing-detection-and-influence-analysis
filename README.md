@@ -12,3 +12,16 @@ Phishing is a common tactic used by cybercriminals to steal personal and financi
 * Run `python app.py`
 
 
+# detr-torch
+Object Detection using Transformers
+
+## Usage: 
+* `git clone https://github.com/gittygupta/detr-torch.git`
+* `cd detr-torch && mkdir saved_models`
+* Download any of the models from [drive](https://drive.google.com/drive/folders/1XRVdKGgSOV-3DWli5yGcd51OUwJXDD8q?usp=sharing)
+* Model Nomenclature: `detr_(Epoch Number).pth`
+* Experimental results: `detr_4.pth` and `detr_6.pth` work best
+* Save the model to the folder `saved_models`
+* `python inference.py --model detr_{epoch_number}.pth --folder {path/to/images}`
+
+
