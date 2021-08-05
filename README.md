@@ -19,3 +19,5 @@ Phishing is a common tactic used by cybercriminals to steal personal and financi
 </p>
                                                                  
 <p>While running the app.py, you might incur a warning if you run it in a CPU in the above picture you can see it. If you have a GPU, then the processes in the app will be much faster. After running this app you will get "http://127.0.0.1:5000/" link where you can run the app on your browser </p>
+
+## How to run:
