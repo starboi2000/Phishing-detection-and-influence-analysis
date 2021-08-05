@@ -41,9 +41,19 @@ Example of this app is we can see in below, where I scraped my own twitter accou
 &nbsp; &nbsp; &nbsp; &nbsp;
 </p>
 
-<p>Fine-tune the Pre-Trained BERT model. Main focus was to check how a different learning rate changes the performance of a model for a particular dataset so keep the model same for both cases used different learning rate. Trained the model with learning rate 0.0001 and until 350 epochs, got the best accuracy at 349th number of 97.46% with the loss of 0.2252, saved the best one. you can see the accuracy and the loss below</p>
+<p>Fine-tune the Pre-Trained BERT model. Main focus was to check how a different learning rate changes the performance of a model for a particular dataset so keep the model same and used different learning rate. Trained the model with learning rate 0.0001 and until 400 epochs, got the best accuracy at 365th number of 92.46% with the loss of 0.2636, saved the best one. you can see the accuracy and the loss below</p>
 <p align="center">
     <img alt="Transformer" src="FULL DATA 2379/92.76(acc).png" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
     <img alt="EfficientDet" src="FULL DATA 2379/92.76(loss).png" width="45%">
 </p>
+
+<p>Below you can see how we check the influence of a text. Our model replies with the probability of each influence and how much percentage of that sentence is which influence because in our research we observed that maximum sentence are containing more than one type of influence so for those it’s hard for even human to decide which one is the actually correct one so with the percentage it’ll be easy for an user to understand the sentence and what its containing. From this research we have made a list of words that are basically there if the sentence is forbidden so this model will inform the user about the influence and with that it will notice whether it’s containing any forbidden words or not. you can check the forbidden list topic_blacklist.txt in the model link which we already put in the above lines 
+Below you can see one Real – Life example and how this model is reacting.
+</p>
+<p align="center">
+    <img alt="Transformer" src="Result/cialdini.png" width=100%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+</p>
+                                                                
+<p>for the video expalnation of how a user can use this app [click here](https://drive.google.com/file/d/1iqKwNJJeyNwY4iKqKBhoBIu04w2lcNyK/view?usp=sharing)
