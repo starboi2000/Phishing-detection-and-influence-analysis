@@ -20,4 +20,10 @@ Phishing is a common tactic used by cybercriminals to steal personal and financi
                                                                  
 <p>While running the app.py, you might incur a warning if you run it in a CPU in the above picture you can see it. If you have a GPU, then the processes in the app will be much faster. After running this app you will get "http://127.0.0.1:5000/" link where you can run the app on your browser </p>
 
-## How to run:
+## Our Result:
+We have used urlexpander to expand the shortened urls(for our model to classify properly), validate_email to check whether the email id is safe or not, and also our influence detection model showed great prediction overall. And we have made our dataset using real-time advertisements and scraping twitter of different big companies. overall we got a satisfactory result in each cases.
+<p>For evaluating the email id classifier we collected many email ids and it worked perfectly fine. Here’s one example with the real mail id of Flipkart</p>
+<p align="center">
+    <img alt="Transformer" src="Result/email 1.png" width=100%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+</p>
