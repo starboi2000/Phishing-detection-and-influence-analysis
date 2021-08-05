@@ -35,7 +35,7 @@ We have used urlexpander to expand the shortened urls(for our model to classify 
 <p>Here we can see this model is giving the right prediction as the email id is not safe
 <br/>
 <p>After that Checked the Twitter model, it’s working fine for a given twitter id.
-Example of this app is we can see in below, where I scraped my own twitter account and I have uploaded 2 Google form in my account, so we can see the results here how it can detect Google form also and if you click any link it’ll show the questions has been asked there and any question is asking forbidden information or not.</p>
+Example of this app is we can see in below, where I scraped my own twitter account and I have uploaded 2 Google form in my account, so we can see the results here how it can detect Google form also and if you click any link it’ll show the questions has been asked there and any question is asking forbidden information or not. and if the twitter id contains all normal links it'll directly detect for each link is Phishing or not</p>
  <p align="center">
     <img alt="Transformer" src="Result/twitter scrap.png" width=100%">
 &nbsp; &nbsp; &nbsp; &nbsp;
