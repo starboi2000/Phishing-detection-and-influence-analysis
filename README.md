@@ -56,4 +56,4 @@ Below you can see one Real – Life example and how this model is reacting.
 &nbsp; &nbsp; &nbsp; &nbsp;
 </p>
                                                                 
-<p>for the video expalnation of how a user can use this app [click here](https://drive.google.com/file/d/1iqKwNJJeyNwY4iKqKBhoBIu04w2lcNyK/view?usp=sharing)
+<p>for the video expalnation of how a user can use this app [click here](https://drive.google.com/file/d/1iqKwNJJeyNwY4iKqKBhoBIu04w2lcNyK/view?usp=sharing)</p>
