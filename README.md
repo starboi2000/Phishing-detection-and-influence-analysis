@@ -40,3 +40,10 @@ Example of this app is we can see in below, where I scraped my own twitter accou
     <img alt="Transformer" src="Result/twitter scrap.png" width=100%">
 &nbsp; &nbsp; &nbsp; &nbsp;
 </p>
+
+<p>Fine-tune the Pre-Trained BERT model. Main focus was to check how a different learning rate changes the performance of a model for a particular dataset so keep the model same for both cases used different learning rate. Trained the model with learning rate 0.0001 and until 350 epochs, got the best accuracy at 349th number of 97.46% with the loss of 0.2252, saved the best one. you can see the accuracy and the loss below</p>
+<p align="center">
+    <img alt="Transformer" src="FULL DATA 2379/92.76(acc).png" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+    <img alt="EfficientDet" src="FULL DATA 2379/92.76(loss).png" width="45%">
+</p>
