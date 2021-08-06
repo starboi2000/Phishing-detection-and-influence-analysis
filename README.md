@@ -51,10 +51,10 @@ Example of this app is we can see in below, where I scraped my own twitter accou
 <p>Below you can see how we check the influence of a text. Our model replies with the probability of each influence and how much percentage of that sentence is containing  which influence because in our research we observed that maximum sentences are containing more than one type of influence so for those it’s hard for even human to decide which one is the actually correct one so with the percentage it’ll be easy for an user to understand the sentence and what its containing. From this research we have made a list of words that are basically there if the sentence is forbidden so this model will inform the user about the influence and with that it will notice whether it’s containing any forbidden words or not. you can check the forbidden list topic_blacklist.txt in the model link which we already put in the above lines 
 Below you can see one Real – Life example and how this model is reacting.
 </p>
-<p align="center">
+<!-- <p align="center">
     <img alt="Transformer" src="Result/cialdini.png" width=100%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-</p>
+</p> -->
                                                                 
 For the video expalnation of how a user can use this app [click here](https://drive.google.com/file/d/1iqKwNJJeyNwY4iKqKBhoBIu04w2lcNyK/view?usp=sharing)
                                                                 
