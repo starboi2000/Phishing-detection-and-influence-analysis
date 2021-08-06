@@ -52,7 +52,7 @@ Example of this app is we can see in below, where I scraped my own twitter accou
 Below you can see one Real – Life example and how this model is reacting.
 </p>
 <p align="center">
-    <img alt="Transformer" src="Result/cialdini.png" width=100%">
+    <img alt="Transformer" src="Result/cial.png" width=100%">
 &nbsp; &nbsp; &nbsp; &nbsp;
 </p>
                                                                 
