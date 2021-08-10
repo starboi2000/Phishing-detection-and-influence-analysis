@@ -62,4 +62,4 @@ For the video expalnation of how a user can use this app [click here](https://dr
 We have uploaded all the codes in a simpler ipynb(jupyter notebook) format to anyone to understand clearly you can access that by [clicking here](https://github.com/starboi2000/Phishing_detection-influence_analysis/tree/main/All%20Codes%20in%20ipynb%20to%20understand%20better)
 
 ## Clear view:
-For understand the algorithm properly and to understand how the research worked [check this](https://github.com/starboi2000/Phishing_detection-influence_analysis/blob/main/CDAC%20Project%20Report.pdf)
+For understand the algorithm properly and to understand how the research worked [check this](https://github.com/starboi2000/Phishing-detection-and-influence-analysis/blob/main/Report_card.pdf)
